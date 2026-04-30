@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gdpr.Api", "Gdpr.Api\Gdpr.Api.csproj", "{70EB38BB-2980-46A3-8544-E50BB45B8951}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gdpr.Application", "Gdpr.Application\Gdpr.Application.csproj", "{915CFD67-32F8-4FCF-91BC-43CA83B6DF0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gdpr.Domain", "Gdpr.Domain\Gdpr.Domain.csproj", "{B35429DA-BFA2-4151-B89C-469483E33633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gdpr.Infrastructure", "Gdpr.Infrastructure\Gdpr.Infrastructure.csproj", "{07BC0CAF-935F-4306-A8E4-3393ECD3617C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70EB38BB-2980-46A3-8544-E50BB45B8951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70EB38BB-2980-46A3-8544-E50BB45B8951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70EB38BB-2980-46A3-8544-E50BB45B8951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70EB38BB-2980-46A3-8544-E50BB45B8951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{915CFD67-32F8-4FCF-91BC-43CA83B6DF0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{915CFD67-32F8-4FCF-91BC-43CA83B6DF0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{915CFD67-32F8-4FCF-91BC-43CA83B6DF0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{915CFD67-32F8-4FCF-91BC-43CA83B6DF0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B35429DA-BFA2-4151-B89C-469483E33633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B35429DA-BFA2-4151-B89C-469483E33633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B35429DA-BFA2-4151-B89C-469483E33633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B35429DA-BFA2-4151-B89C-469483E33633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07BC0CAF-935F-4306-A8E4-3393ECD3617C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07BC0CAF-935F-4306-A8E4-3393ECD3617C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07BC0CAF-935F-4306-A8E4-3393ECD3617C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07BC0CAF-935F-4306-A8E4-3393ECD3617C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

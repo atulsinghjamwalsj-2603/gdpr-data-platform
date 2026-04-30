@@ -1,0 +1,6 @@
+@Gdpr.Api_HostAddress = http://localhost:5187
+
+GET {{Gdpr.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -18,8 +18,12 @@ public class UserController : ControllerBase
     [HttpPost]
 public IActionResult CreateUser(CreateUserRequest request)
 {
-    if (!ModelState.IsValid)
-        return BadRequest(ModelState);
+   if (!ModelState.IsValid)
+    {
+    return BadRequest(
+        ApiResponse<string>.Failure("Invalid request data")
+    );
+    }
 
     var userId = _userService.CreateUser(request);
 

@@ -9,7 +9,6 @@ public class UserService : IUserService
     public Guid CreateUser(CreateUserRequest request)
     {
         var user = new User(request.Email, request.FullName);
-
         // Later: save to database
 
         return user.Id;

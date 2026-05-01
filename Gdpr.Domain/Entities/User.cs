@@ -1,12 +1,13 @@
+using Gdpr.Domain.ValueObjects;
 namespace Gdpr.Domain.Entities;
 
 public class User
 {
     public Guid Id { get; private set; }
 
-    public string Email { get; private set; }
+    public Email Email { get; private set; }
 
-    public string FullName { get; private set; }
+    public string FullName { get; private set; } = null!;
 
     public bool IsDeleted { get; private set; }
 
@@ -17,7 +18,7 @@ public class User
     public User(string email, string fullName)
     {
         Id = Guid.NewGuid();
-        Email = email;
+        Email = Email.Create(email);
         FullName = fullName;
         CreatedAt = DateTime.UtcNow;
         IsDeleted = false;

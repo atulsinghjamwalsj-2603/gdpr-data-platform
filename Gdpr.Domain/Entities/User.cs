@@ -28,4 +28,9 @@ public class User
     {
         IsDeleted = true;
     }
+
+    public void UpdateEmail(string email)
+    {
+         Email = Email.Create(email);
+    }
 }

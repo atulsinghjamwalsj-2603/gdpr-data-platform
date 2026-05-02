@@ -4,13 +4,13 @@ namespace Gdpr.Domain.ValueObjects;
 
 public class Email
 {
-    public string Value { get; }
+    public string Value { get; private set; }
 
-    private Email(string value)
+    public Email(string value)
     {
         Value = value;
     }
-
+    private Email() { } // 👈 REQUIRED for EF
     public static Email Create(string value)
     {
         if (string.IsNullOrWhiteSpace(value))

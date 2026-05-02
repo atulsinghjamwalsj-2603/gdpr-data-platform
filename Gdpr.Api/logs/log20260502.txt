@@ -1,0 +1,308 @@
+2026-05-02 16:40:52.733 +05:30 [INF] Now listening on: http://localhost:5187
+2026-05-02 16:40:52.807 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 16:40:52.835 +05:30 [INF] Hosting environment: Development
+2026-05-02 16:40:52.837 +05:30 [INF] Content root path: C:\Projects\gdpr-data-platform\Gdpr.Api
+2026-05-02 16:41:32.625 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - null null
+2026-05-02 16:41:32.735 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - 200 null text/html;charset=utf-8 111.3668ms
+2026-05-02 16:41:33.004 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - null null
+2026-05-02 16:41:33.108 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 105.0316ms
+2026-05-02 16:41:50.204 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5187/api/User - application/json 56
+2026-05-02 16:41:50.223 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-02 16:41:50.228 +05:30 [INF] Executing endpoint 'Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api)'
+2026-05-02 16:41:50.257 +05:30 [INF] Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateUser(Gdpr.Application.DTOs.CreateUserRequest) on controller Gdpr.Api.Controllers.UserController (Gdpr.Api).
+2026-05-02 16:41:50.434 +05:30 [INF] Executed action Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api) in 170.7522ms
+2026-05-02 16:41:50.436 +05:30 [INF] Executed endpoint 'Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api)'
+2026-05-02 16:41:50.438 +05:30 [ERR] Unhandled exception occurred
+System.ArgumentException: Invalid email format.
+   at Gdpr.Domain.ValueObjects.Email.Create(String value) in C:\Projects\gdpr-data-platform\Gdpr.Domain\ValueObjects\Email.cs:line 20
+   at Gdpr.Domain.Entities.User..ctor(String email, String fullName) in C:\Projects\gdpr-data-platform\Gdpr.Domain\Entities\User.cs:line 21
+   at Gdpr.Application.Services.UserService.CreateUser(CreateUserRequest request) in C:\Projects\gdpr-data-platform\Gdpr.Application\Services\UserService.cs:line 17
+   at Gdpr.Api.Controllers.UserController.CreateUser(CreateUserRequest request) in C:\Projects\gdpr-data-platform\Gdpr.Api\Controllers\UserController.cs:line 28
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Gdpr.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Projects\gdpr-data-platform\Gdpr.Api\Middleware\ExceptionMiddleware.cs:line 21
+2026-05-02 16:41:50.481 +05:30 [INF] HTTP POST /api/User responded 400 in 260.9187 ms
+2026-05-02 16:41:50.487 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5187/api/User - 400 null application/json 282.4901ms
+2026-05-02 16:44:40.730 +05:30 [INF] Application is shutting down...
+2026-05-02 16:52:27.706 +05:30 [INF] Now listening on: http://localhost:5187
+2026-05-02 16:52:27.757 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 16:52:27.760 +05:30 [INF] Hosting environment: Development
+2026-05-02 16:52:27.762 +05:30 [INF] Content root path: C:\Projects\gdpr-data-platform\Gdpr.Api
+2026-05-02 16:53:00.586 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - null null
+2026-05-02 16:53:00.709 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - 200 null text/html;charset=utf-8 125.6945ms
+2026-05-02 16:53:00.909 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - null null
+2026-05-02 16:53:01.011 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 101.8226ms
+2026-05-02 16:53:16.198 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5187/api/User - application/json 39
+2026-05-02 16:53:16.216 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-02 16:53:16.221 +05:30 [INF] Executing endpoint 'Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api)'
+2026-05-02 16:53:16.255 +05:30 [INF] Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateUser(Gdpr.Application.DTOs.CreateUserRequest) on controller Gdpr.Api.Controllers.UserController (Gdpr.Api).
+2026-05-02 16:53:16.560 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-05-02 16:53:16.608 +05:30 [INF] Executed action Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api) in 346.8355ms
+2026-05-02 16:53:16.610 +05:30 [INF] Executed endpoint 'Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api)'
+2026-05-02 16:53:16.614 +05:30 [INF] HTTP POST /api/User responded 400 in 402.3387 ms
+2026-05-02 16:53:16.621 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5187/api/User - 400 null application/problem+json; charset=utf-8 422.4453ms
+2026-05-02 16:56:49.450 +05:30 [INF] Application is shutting down...
+2026-05-02 16:58:22.941 +05:30 [INF] Now listening on: http://localhost:5187
+2026-05-02 16:58:23.005 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 16:58:23.008 +05:30 [INF] Hosting environment: Development
+2026-05-02 16:58:23.010 +05:30 [INF] Content root path: C:\Projects\gdpr-data-platform\Gdpr.Api
+2026-05-02 16:58:26.632 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - null null
+2026-05-02 16:58:26.755 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - 200 null text/html;charset=utf-8 124.6623ms
+2026-05-02 16:58:26.994 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - null null
+2026-05-02 16:58:27.110 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 116.1139ms
+2026-05-02 16:58:39.422 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5187/api/User - application/json 39
+2026-05-02 16:58:39.437 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-02 16:58:39.444 +05:30 [INF] Executing endpoint 'Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api)'
+2026-05-02 16:58:39.494 +05:30 [INF] Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateUser(Gdpr.Application.DTOs.CreateUserRequest) on controller Gdpr.Api.Controllers.UserController (Gdpr.Api).
+2026-05-02 16:58:39.731 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Gdpr.Application.DTOs.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-02 16:58:39.747 +05:30 [INF] Executed action Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api) in 222.4195ms
+2026-05-02 16:58:39.748 +05:30 [INF] Executed endpoint 'Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api)'
+2026-05-02 16:58:39.752 +05:30 [INF] HTTP POST /api/User responded 400 in 318.2071 ms
+2026-05-02 16:58:39.758 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5187/api/User - 400 null application/json; charset=utf-8 335.9697ms
+2026-05-02 17:01:32.912 +05:30 [INF] Application is shutting down...
+2026-05-02 17:02:00.296 +05:30 [INF] Now listening on: http://localhost:5187
+2026-05-02 17:02:00.337 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 17:02:00.339 +05:30 [INF] Hosting environment: Development
+2026-05-02 17:02:00.340 +05:30 [INF] Content root path: C:\Projects\gdpr-data-platform\Gdpr.Api
+2026-05-02 17:02:00.492 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - null null
+2026-05-02 17:02:00.590 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - 200 null text/html;charset=utf-8 98.9179ms
+2026-05-02 17:02:00.791 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - null null
+2026-05-02 17:02:00.896 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 105.8137ms
+2026-05-02 17:02:12.784 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5187/api/User - application/json 39
+2026-05-02 17:02:12.817 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-02 17:02:12.824 +05:30 [INF] Executing endpoint 'Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api)'
+2026-05-02 17:02:12.866 +05:30 [INF] Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateUser(Gdpr.Application.DTOs.CreateUserRequest) on controller Gdpr.Api.Controllers.UserController (Gdpr.Api).
+2026-05-02 17:02:13.037 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Gdpr.Application.DTOs.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-02 17:02:13.056 +05:30 [INF] Executed action Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api) in 181.5326ms
+2026-05-02 17:02:13.058 +05:30 [INF] Executed endpoint 'Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api)'
+2026-05-02 17:02:13.061 +05:30 [INF] HTTP POST /api/User responded 400 in 249.0705 ms
+2026-05-02 17:02:13.067 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5187/api/User - 400 null application/json; charset=utf-8 283.1746ms
+2026-05-02 17:05:42.706 +05:30 [INF] Application is shutting down...
+2026-05-02 17:05:49.559 +05:30 [INF] Now listening on: http://localhost:5187
+2026-05-02 17:05:49.611 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 17:05:49.612 +05:30 [INF] Hosting environment: Development
+2026-05-02 17:05:49.614 +05:30 [INF] Content root path: C:\Projects\gdpr-data-platform\Gdpr.Api
+2026-05-02 17:05:54.512 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - null null
+2026-05-02 17:05:54.606 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - 200 null text/html;charset=utf-8 95.6004ms
+2026-05-02 17:05:54.785 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - null null
+2026-05-02 17:05:54.906 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 122.3721ms
+2026-05-02 17:06:07.886 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5187/api/User - application/json 39
+2026-05-02 17:06:07.906 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-02 17:06:07.909 +05:30 [INF] Executing endpoint 'Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api)'
+2026-05-02 17:06:07.936 +05:30 [INF] Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateUser(Gdpr.Application.DTOs.CreateUserRequest) on controller Gdpr.Api.Controllers.UserController (Gdpr.Api).
+2026-05-02 17:06:08.145 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Gdpr.Application.DTOs.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-02 17:06:08.160 +05:30 [INF] Executed action Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api) in 217.6529ms
+2026-05-02 17:06:08.162 +05:30 [INF] Executed endpoint 'Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api)'
+2026-05-02 17:06:08.168 +05:30 [INF] HTTP POST /api/User responded 400 in 267.3545 ms
+2026-05-02 17:06:08.173 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5187/api/User - 400 null application/json; charset=utf-8 286.8263ms
+2026-05-02 17:07:55.571 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5187/api/User - application/json 57
+2026-05-02 17:07:55.581 +05:30 [INF] Executing endpoint 'Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api)'
+2026-05-02 17:07:55.585 +05:30 [INF] Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateUser(Gdpr.Application.DTOs.CreateUserRequest) on controller Gdpr.Api.Controllers.UserController (Gdpr.Api).
+2026-05-02 17:07:56.800 +05:30 [INF] Executed DbCommand (98ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [CreatedAt], [FullName], [IsDeleted], [Email])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-05-02 17:07:56.829 +05:30 [INF] Executing OkObjectResult, writing value of type 'Gdpr.Application.DTOs.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-02 17:07:56.841 +05:30 [INF] Executed action Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api) in 1253.2919ms
+2026-05-02 17:07:56.846 +05:30 [INF] Executed endpoint 'Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api)'
+2026-05-02 17:07:56.848 +05:30 [INF] HTTP POST /api/User responded 200 in 1267.4062 ms
+2026-05-02 17:07:56.855 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5187/api/User - 200 null application/json; charset=utf-8 1284.7775ms
+2026-05-02 17:11:04.033 +05:30 [INF] Application is shutting down...
+2026-05-02 17:11:14.993 +05:30 [INF] Now listening on: http://localhost:5187
+2026-05-02 17:11:15.048 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 17:11:15.051 +05:30 [INF] Hosting environment: Development
+2026-05-02 17:11:15.053 +05:30 [INF] Content root path: C:\Projects\gdpr-data-platform\Gdpr.Api
+2026-05-02 17:22:53.924 +05:30 [INF] Application is shutting down...
+2026-05-02 17:23:13.442 +05:30 [INF] Now listening on: http://localhost:5187
+2026-05-02 17:23:13.510 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 17:23:13.512 +05:30 [INF] Hosting environment: Development
+2026-05-02 17:23:13.515 +05:30 [INF] Content root path: C:\Projects\gdpr-data-platform\Gdpr.Api
+2026-05-02 17:23:48.634 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - null null
+2026-05-02 17:23:48.758 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - 200 null text/html;charset=utf-8 125.0201ms
+2026-05-02 17:23:49.063 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - null null
+2026-05-02 17:23:49.215 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 151.9903ms
+2026-05-02 17:24:13.792 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5187/api/User - application/json 56
+2026-05-02 17:24:13.807 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-02 17:24:13.813 +05:30 [INF] Executing endpoint 'Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api)'
+2026-05-02 17:24:13.846 +05:30 [INF] Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateUser(Gdpr.Application.DTOs.CreateUserRequest) on controller Gdpr.Api.Controllers.UserController (Gdpr.Api).
+2026-05-02 17:24:15.353 +05:30 [INF] Executed DbCommand (112ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [CreatedAt], [FullName], [IsDeleted], [Email])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-05-02 17:24:15.389 +05:30 [INF] Executing OkObjectResult, writing value of type 'Gdpr.Application.DTOs.ApiResponse`1[[Gdpr.Application.DTOs.UserResponseDto, Gdpr.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 17:24:15.411 +05:30 [INF] Executed action Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api) in 1556.1856ms
+2026-05-02 17:24:15.414 +05:30 [INF] Executed endpoint 'Gdpr.Api.Controllers.UserController.CreateUser (Gdpr.Api)'
+2026-05-02 17:24:15.418 +05:30 [INF] HTTP POST /api/User responded 200 in 1614.2536 ms
+2026-05-02 17:24:15.432 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5187/api/User - 200 null application/json; charset=utf-8 1639.8585ms
+2026-05-02 17:24:23.222 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/api/User - null null
+2026-05-02 17:24:23.241 +05:30 [INF] Executing endpoint 'Gdpr.Api.Controllers.UserController.GetAll (Gdpr.Api)'
+2026-05-02 17:24:23.263 +05:30 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(PaginationRequest) on controller Gdpr.Api.Controllers.UserController (Gdpr.Api).
+2026-05-02 17:24:23.618 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2026-05-02 17:24:23.654 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-05-02 17:24:23.656 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-05-02 17:24:23.750 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[FullName], [u].[IsDeleted], [u].[Email]
+FROM [Users] AS [u]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-05-02 17:24:23.775 +05:30 [INF] Executing OkObjectResult, writing value of type 'Gdpr.Application.DTOs.ApiResponse`1[[PaginatedResponse`1[[Gdpr.Application.DTOs.UserResponseDto, Gdpr.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Gdpr.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 17:24:23.790 +05:30 [INF] Executed action Gdpr.Api.Controllers.UserController.GetAll (Gdpr.Api) in 522.5477ms
+2026-05-02 17:24:23.795 +05:30 [INF] Executed endpoint 'Gdpr.Api.Controllers.UserController.GetAll (Gdpr.Api)'
+2026-05-02 17:24:23.799 +05:30 [INF] HTTP GET /api/User responded 200 in 558.6089 ms
+2026-05-02 17:24:23.806 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/api/User - 200 null application/json; charset=utf-8 583.6633ms
+2026-05-02 17:24:44.529 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/api/User?PageNumber=1&PageSize=2 - null null
+2026-05-02 17:24:44.534 +05:30 [INF] Executing endpoint 'Gdpr.Api.Controllers.UserController.GetAll (Gdpr.Api)'
+2026-05-02 17:24:44.537 +05:30 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(PaginationRequest) on controller Gdpr.Api.Controllers.UserController (Gdpr.Api).
+2026-05-02 17:24:44.582 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2026-05-02 17:24:44.592 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[FullName], [u].[IsDeleted], [u].[Email]
+FROM [Users] AS [u]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-05-02 17:24:44.597 +05:30 [INF] Executing OkObjectResult, writing value of type 'Gdpr.Application.DTOs.ApiResponse`1[[PaginatedResponse`1[[Gdpr.Application.DTOs.UserResponseDto, Gdpr.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Gdpr.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 17:24:44.600 +05:30 [INF] Executed action Gdpr.Api.Controllers.UserController.GetAll (Gdpr.Api) in 59.238ms
+2026-05-02 17:24:44.604 +05:30 [INF] Executed endpoint 'Gdpr.Api.Controllers.UserController.GetAll (Gdpr.Api)'
+2026-05-02 17:24:44.607 +05:30 [INF] HTTP GET /api/User responded 200 in 72.9146 ms
+2026-05-02 17:24:44.611 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/api/User?PageNumber=1&PageSize=2 - 200 null application/json; charset=utf-8 82.6829ms
+2026-05-02 17:26:56.727 +05:30 [INF] Application is shutting down...
+2026-05-02 17:27:05.236 +05:30 [INF] Now listening on: http://localhost:5187
+2026-05-02 17:27:05.304 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 17:27:05.307 +05:30 [INF] Hosting environment: Development
+2026-05-02 17:27:05.309 +05:30 [INF] Content root path: C:\Projects\gdpr-data-platform\Gdpr.Api
+2026-05-02 17:27:09.972 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - null null
+2026-05-02 17:27:10.131 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - 200 null text/html;charset=utf-8 160.2792ms
+2026-05-02 17:27:10.411 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - null null
+2026-05-02 17:27:10.628 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 217.8521ms
+2026-05-02 17:27:16.964 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/api/User - null null
+2026-05-02 17:27:17.002 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-02 17:27:17.009 +05:30 [INF] Executing endpoint 'Gdpr.Api.Controllers.UserController.GetAll (Gdpr.Api)'
+2026-05-02 17:27:17.054 +05:30 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(PaginationRequest) on controller Gdpr.Api.Controllers.UserController (Gdpr.Api).
+2026-05-02 17:27:18.296 +05:30 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2026-05-02 17:27:18.347 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-05-02 17:27:18.349 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-05-02 17:27:18.433 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[FullName], [u].[IsDeleted], [u].[Email]
+FROM [Users] AS [u]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-05-02 17:27:18.531 +05:30 [INF] Executing OkObjectResult, writing value of type 'Gdpr.Application.DTOs.ApiResponse`1[[PaginatedResponse`1[[Gdpr.Application.DTOs.UserResponseDto, Gdpr.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Gdpr.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 17:27:18.566 +05:30 [INF] Executed action Gdpr.Api.Controllers.UserController.GetAll (Gdpr.Api) in 1505.0259ms
+2026-05-02 17:27:18.569 +05:30 [INF] Executed endpoint 'Gdpr.Api.Controllers.UserController.GetAll (Gdpr.Api)'
+2026-05-02 17:27:18.575 +05:30 [INF] HTTP GET /api/User responded 200 in 1578.5252 ms
+2026-05-02 17:27:18.587 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/api/User - 200 null application/json; charset=utf-8 1623.2124ms
+2026-05-02 17:52:50.019 +05:30 [INF] Application is shutting down...
+2026-05-02 17:53:10.293 +05:30 [INF] Now listening on: http://localhost:5187
+2026-05-02 17:53:10.358 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 17:53:10.361 +05:30 [INF] Hosting environment: Development
+2026-05-02 17:53:10.363 +05:30 [INF] Content root path: C:\Projects\gdpr-data-platform\Gdpr.Api
+2026-05-02 17:53:19.676 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/index.html - null null
+2026-05-02 17:53:19.779 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/index.html - 200 null text/html;charset=utf-8 104.6902ms
+2026-05-02 17:53:20.066 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - null null
+2026-05-02 17:53:20.179 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 113.3922ms
+2026-05-02 17:53:28.355 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/api/User - null null
+2026-05-02 17:53:28.370 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-02 17:53:28.375 +05:30 [INF] Executing endpoint 'Gdpr.Api.Controllers.UserController.GetAll (Gdpr.Api)'
+2026-05-02 17:53:28.412 +05:30 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(PaginationRequest) on controller Gdpr.Api.Controllers.UserController (Gdpr.Api).
+2026-05-02 17:53:29.690 +05:30 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2026-05-02 17:53:29.735 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-05-02 17:53:29.737 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-05-02 17:53:29.812 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[FullName], [u].[IsDeleted], [u].[Email]
+FROM [Users] AS [u]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-05-02 17:53:29.882 +05:30 [INF] Executing OkObjectResult, writing value of type 'Gdpr.Application.DTOs.ApiResponse`1[[PaginatedResponse`1[[Gdpr.Application.DTOs.UserResponseDto, Gdpr.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Gdpr.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 17:53:29.909 +05:30 [INF] Executed action Gdpr.Api.Controllers.UserController.GetAll (Gdpr.Api) in 1489.519ms
+2026-05-02 17:53:29.912 +05:30 [INF] Executed endpoint 'Gdpr.Api.Controllers.UserController.GetAll (Gdpr.Api)'
+2026-05-02 17:53:29.917 +05:30 [INF] HTTP GET /api/User responded 200 in 1551.1617 ms
+2026-05-02 17:53:29.931 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/api/User - 200 null application/json; charset=utf-8 1575.7173ms
+2026-05-02 17:53:57.548 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5187/api/User/e330b5e2-853e-4a1b-bcd4-5fc74acc6f81 - application/json 31
+2026-05-02 17:53:57.553 +05:30 [INF] Executing endpoint 'Gdpr.Api.Controllers.UserController.Update (Gdpr.Api)'
+2026-05-02 17:53:57.565 +05:30 [INF] Route matched with {action = "Update", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, UpdateUserRequest) on controller Gdpr.Api.Controllers.UserController (Gdpr.Api).
+2026-05-02 17:53:57.644 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[FullName], [u].[IsDeleted], [u].[Email]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+2026-05-02 17:53:57.742 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [Email] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2026-05-02 17:53:57.755 +05:30 [INF] Executing OkObjectResult, writing value of type 'Gdpr.Application.DTOs.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-02 17:53:57.759 +05:30 [INF] Executed action Gdpr.Api.Controllers.UserController.Update (Gdpr.Api) in 192.354ms
+2026-05-02 17:53:57.762 +05:30 [INF] Executed endpoint 'Gdpr.Api.Controllers.UserController.Update (Gdpr.Api)'
+2026-05-02 17:53:57.764 +05:30 [INF] HTTP PUT /api/User/e330b5e2-853e-4a1b-bcd4-5fc74acc6f81 responded 200 in 210.8326 ms
+2026-05-02 17:53:57.767 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5187/api/User/e330b5e2-853e-4a1b-bcd4-5fc74acc6f81 - 200 null application/json; charset=utf-8 219.5138ms
+2026-05-02 17:54:05.181 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/api/User - null null
+2026-05-02 17:54:05.192 +05:30 [INF] Executing endpoint 'Gdpr.Api.Controllers.UserController.GetAll (Gdpr.Api)'
+2026-05-02 17:54:05.194 +05:30 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(PaginationRequest) on controller Gdpr.Api.Controllers.UserController (Gdpr.Api).
+2026-05-02 17:54:05.262 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2026-05-02 17:54:05.269 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[FullName], [u].[IsDeleted], [u].[Email]
+FROM [Users] AS [u]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-05-02 17:54:05.273 +05:30 [INF] Executing OkObjectResult, writing value of type 'Gdpr.Application.DTOs.ApiResponse`1[[PaginatedResponse`1[[Gdpr.Application.DTOs.UserResponseDto, Gdpr.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Gdpr.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 17:54:05.275 +05:30 [INF] Executed action Gdpr.Api.Controllers.UserController.GetAll (Gdpr.Api) in 71.9983ms
+2026-05-02 17:54:05.278 +05:30 [INF] Executed endpoint 'Gdpr.Api.Controllers.UserController.GetAll (Gdpr.Api)'
+2026-05-02 17:54:05.280 +05:30 [INF] HTTP GET /api/User responded 200 in 88.0889 ms
+2026-05-02 17:54:05.283 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/api/User - 200 null application/json; charset=utf-8 101.9034ms
+2026-05-02 17:54:22.665 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5187/api/User/e330b5e2-853e-4a1b-bcd4-5fc74acc6f81 - null null
+2026-05-02 17:54:22.677 +05:30 [INF] Executing endpoint 'Gdpr.Api.Controllers.UserController.Delete (Gdpr.Api)'
+2026-05-02 17:54:22.689 +05:30 [INF] Route matched with {action = "Delete", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller Gdpr.Api.Controllers.UserController (Gdpr.Api).
+2026-05-02 17:54:22.723 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[FullName], [u].[IsDeleted], [u].[Email]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+2026-05-02 17:54:22.743 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [IsDeleted] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2026-05-02 17:54:22.749 +05:30 [INF] Executing OkObjectResult, writing value of type 'Gdpr.Application.DTOs.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-02 17:54:22.752 +05:30 [INF] Executed action Gdpr.Api.Controllers.UserController.Delete (Gdpr.Api) in 59.1648ms
+2026-05-02 17:54:22.755 +05:30 [INF] Executed endpoint 'Gdpr.Api.Controllers.UserController.Delete (Gdpr.Api)'
+2026-05-02 17:54:22.757 +05:30 [INF] HTTP DELETE /api/User/e330b5e2-853e-4a1b-bcd4-5fc74acc6f81 responded 200 in 79.3315 ms
+2026-05-02 17:54:22.759 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5187/api/User/e330b5e2-853e-4a1b-bcd4-5fc74acc6f81 - 200 null application/json; charset=utf-8 94.486ms
+2026-05-02 17:54:29.001 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5187/api/User - null null
+2026-05-02 17:54:29.005 +05:30 [INF] Executing endpoint 'Gdpr.Api.Controllers.UserController.GetAll (Gdpr.Api)'
+2026-05-02 17:54:29.008 +05:30 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(PaginationRequest) on controller Gdpr.Api.Controllers.UserController (Gdpr.Api).
+2026-05-02 17:54:29.033 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2026-05-02 17:54:29.045 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[FullName], [u].[IsDeleted], [u].[Email]
+FROM [Users] AS [u]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-05-02 17:54:29.050 +05:30 [INF] Executing OkObjectResult, writing value of type 'Gdpr.Application.DTOs.ApiResponse`1[[PaginatedResponse`1[[Gdpr.Application.DTOs.UserResponseDto, Gdpr.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Gdpr.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 17:54:29.054 +05:30 [INF] Executed action Gdpr.Api.Controllers.UserController.GetAll (Gdpr.Api) in 42.3422ms
+2026-05-02 17:54:29.060 +05:30 [INF] Executed endpoint 'Gdpr.Api.Controllers.UserController.GetAll (Gdpr.Api)'
+2026-05-02 17:54:29.062 +05:30 [INF] HTTP GET /api/User responded 200 in 56.9484 ms
+2026-05-02 17:54:29.066 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5187/api/User - 200 null application/json; charset=utf-8 64.8206ms

@@ -16,22 +16,39 @@ public class UserController : ControllerBase
     }
 
     [HttpPost]
-public IActionResult CreateUser(CreateUserRequest request)
-{
-   if (!ModelState.IsValid)
+    public IActionResult CreateUser(CreateUserRequest request)
     {
-    return BadRequest(
-        ApiResponse<string>.Failure("Invalid request data")
-    );
+        var userId = _userService.CreateUser(request);
+
+        var response = ApiResponse<UserResponseDto>.SuccessResponse(
+            new UserResponseDto{ UserId = userId },
+            "User created successfully"
+        );
+
+        return Ok(response);
     }
 
-    var userId = _userService.CreateUser(request);
+    [HttpGet]
+    public async Task<IActionResult> GetAll([FromQuery] PaginationRequest request)
+    {
+       var result = await _userService.GetPagedAsync(request.PageNumber, request.PageSize);
 
-    var response = ApiResponse<object>.SuccessResponse(
-        new { userId },
-        "User created successfully"
-    );
+       return Ok(ApiResponse<PaginatedResponse<UserResponseDto>>.SuccessResponse(result));
+    }
 
-    return Ok(response);
+    [HttpPut("{id}")]
+public async Task<IActionResult> Update(Guid id, UpdateUserRequest request)
+{
+    await _userService.UpdateAsync(id, request);
+
+     return Ok(ApiResponse<string>.SuccessResponse(null, "User updated successfully"));
 }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(Guid id)
+    {
+        await _userService.DeleteAsync(id);
+
+        return Ok(ApiResponse<string>.SuccessResponse(null, "User deleted successfully"));
+    }
 }
